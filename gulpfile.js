@@ -77,7 +77,7 @@ const serve = (done) => {
   browserSync.init({
     open: true,
     server: {
-      baseDir: 'htdocs/pages/',
+      baseDir: `${conf.path.dist}`,
       index: 'index.html'
     },
     port: 3000,
